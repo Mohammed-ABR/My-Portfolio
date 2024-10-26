@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.body {
+  background-color: #fff;
+  font-family: sans-serif;
+}
+
+/* .profile img {
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  border-bottom: 5px solid gray;
+} */
+.my-photo img {
+  width: 35rem;
+  height: 35rem;
+  border-radius: 50%;
+}
+.about {
+  margin-left: 15px;
+}
+.blok-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile-info {
+  font-size: 1.3rem;
+  padding: 2rem;
+}
+.profile-info::-webkit-scrollbar {
+  width: 0;
+}
+.profile-info h1 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.social {
+  margin-top: 20px;
+  margin-left: 15px;
+}
+.social img {
+  width: 25px;
+  margin-right: 15px;
+  cursor: pointer;
+  transition: 2s;
+}
+.social img {
+  transform: rotate(360deg);
+}
+
+.profile-info h2 {
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+section {
+  display: flex;
+  padding: 30px 10px;
+  margin: 2%;
+  text-align: center;
+  flex-direction: column;
+}
+a {
+  text-decoration: none;
+}
+.services img {
+  margin: 5px;
+  padding: 4px;
+  margin-bottom: 5px;
+  margin-left: 3px;
+  cursor: pointer;
+}
+section h2 {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+}
+
+.services small {
+  padding-top: 15px;
+  display: block;
+}
+.services .bloks {
+  width: 100%;
+  display: flex;
+
+  justify-content: space-between;
+}
+.blok {
+  width: 30%;
+  box-shadow: 0 0 15px rgba(37, 73, 214, 0.18);
+  transition: 0.7s ease;
+  padding: 1.5rem;
+}
+.blok:hover {
+  transform: scale(1.1);
+}
+
+.projects img {
+  width: 27%;
+  padding: 4px;
+  margin-bottom: 5px;
+  margin-left: 3px;
+  box-shadow: 0 0 15px rgba(37, 73, 214, 0.18);
+  cursor: pointer;
+  transition: 0.7s ease;
+}
+
+.projects img:hover {
+  transform: scale(1.1);
+}
+
+.form-box {
+  margin-top: 30px;
+}
+.input-group input {
+  width: 45%;
+  border: 0;
+  outline: none !important;
+  padding: 10px;
+  background-color: rgb(192, 192, 192);
+  margin: 2%;
+  display: inline-block;
+}
+
+.text-area textarea {
+  width: 95%;
+  border: 0;
+  outline: none !important;
+  padding: 10px;
+  background-color: rgb(192, 192, 192);
+  margin: 2%;
+}
+
+.sub {
+  border: 0;
+  outline: none !important;
+  padding: 10px;
+  background-color: rgb(48, 139, 192);
+  margin: 2%;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+
+.cont {
+  margin: 5% 0 5% 25%;
+  width: 65%;
+}
+.cont img {
+  width: 20px;
+  margin: -5px 10px;
+}
+
+.cont span {
+  margin: 3%;
+}
+.copy {
+  text-align: center;
+  margin-bottom: 30px;
+  color: gray;
+}
+
+@media only screen and (max-width: 95%) {
+  .profile-info {
+    width: 95%;
+  }
+  .profile {
+    width: 95%;
+  }
+  .profinle img {
+    width: 95%;
+  }
+  .services {
+    width: 95%;
+    margin-bottom: 15px;
+  }
+  .cont span {
+    font-size: 10px;
+  }
+  .cont img {
+    width: 12px;
+  }
+}
