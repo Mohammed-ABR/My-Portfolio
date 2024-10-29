@@ -8,12 +8,12 @@
   font-family: sans-serif;
 }
 
-/* .profile img {
-  width: 90%;
-  height: 90%;
+.profile img {
+  width: 70%;
+  height: 70%;
   border-radius: 50%;
   border-bottom: 5px solid gray;
-} */
+}
 .my-photo img {
   width: 35rem;
   height: 35rem;
@@ -23,9 +23,11 @@
   margin-left: 15px;
 }
 .blok-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  .blok-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 .profile-info {
   font-size: 1.3rem;
@@ -68,7 +70,7 @@ a {
 }
 .services img {
   margin: 5px;
-  padding: 4px;
+  padding: 1px;
   margin-bottom: 5px;
   margin-left: 3px;
   cursor: pointer;
@@ -163,24 +165,108 @@ section h2 {
   color: gray;
 }
 
-@media only screen and (max-width: 95%) {
+@media (max-width: 768px) {
+  /* Profiel Informatie en Foto */
+  .blok-info {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .my-photo img {
+    width: 20rem;
+    height: 20rem;
+  }
+
   .profile-info {
-    width: 95%;
+    padding: 1rem;
+    text-align: center;
   }
-  .profile {
-    width: 95%;
+
+  /* Diensten */
+  .services .bloks {
+    flex-direction: column;
   }
-  .profinle img {
-    width: 95%;
+
+  .blok {
+    width: 100%;
+    margin-bottom: 1rem;
   }
-  .services {
-    width: 95%;
-    margin-bottom: 15px;
+
+  /* Projecten Afbeeldingen */
+  .projects img {
+    width: 80%;
   }
-  .cont span {
-    font-size: 10px;
+
+  /* Contactformulier */
+  .input-group input,
+  .text-area textarea {
+    width: 100%;
+    margin: 1% 0;
   }
+
+  /* Contactinformatie */
+  .cont {
+    margin: 5%;
+    text-align: center;
+  }
+
+  .cont img {
+    width: 16px;
+  }
+
+  /* Algemeen */
+  section h2 {
+    font-size: 2rem;
+  }
+
+  .copy {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Algemene Schaling */
+  .my-photo img {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .profile-info h1 {
+    font-size: 1.5rem;
+  }
+
+  .profile-info {
+    font-size: 1rem;
+  }
+
+  /* Contact Informatie Icons en Tekst */
   .cont img {
     width: 12px;
+  }
+
+  .cont span {
+    font-size: 0.8rem;
+  }
+
+  .social img {
+    width: 20px;
+  }
+
+  .projects img {
+    width: 90%;
+  }
+
+  .sub {
+    width: 100%;
+  }
+
+  /* Tekst en Koppen */
+  section h2 {
+    font-size: 1.8rem;
+  }
+
+  .copy {
+    font-size: 0.7rem;
   }
 }
